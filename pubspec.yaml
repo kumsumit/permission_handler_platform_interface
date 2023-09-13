@@ -1,0 +1,25 @@
+name: permission_handler_platform_interface
+publish_to: none
+description: A common platform interface for the permission_handler plugin.
+homepage: https://github.com/baseflow/flutter-permission-handler/tree/master/permission_handler_platform_interface
+# NOTE: We strongly prefer non-breaking changes, even at the expense of a
+# less-clean API. See https://flutter.dev/go/platform-interface-breaking-changes
+version: 3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.9.1
+  plugin_platform_interface:
+    git: https://github.com/kumsumit/plugin_platform_interface.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.2
+  flutter_lints: 
+    git: https://github.com/kumsumit/flutter_lints.git
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+  flutter: ">=3.13.0"
