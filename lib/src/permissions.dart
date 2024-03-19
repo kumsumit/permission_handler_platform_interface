@@ -1,17 +1,17 @@
-part of permission_handler_platform_interface;
+part of '../permission_handler_platform_interface.dart';
 
 /// A special kind of permission, used to access a service.
 ///
 /// Additionally to the actions that normal [Permission]s have, you can also
 /// query the status of the related service.
 class PermissionWithService extends Permission {
-  const PermissionWithService._(int value) : super._(value);
+  const PermissionWithService._(super.value) : super._();
 
   /// Creates a [PermissionWithService] instance.
   ///
   /// This constructor is marked public for testing purposes only.
   @visibleForTesting
-  const PermissionWithService.private(int value) : super._(value);
+  const PermissionWithService.private(super.value) : super._();
 }
 
 /// Defines the permissions which can be checked and requested.

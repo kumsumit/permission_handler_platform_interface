@@ -1,4 +1,4 @@
-part of permission_handler_platform_interface;
+part of '../permission_handler_platform_interface.dart';
 
 /// Defines the state of a [Permission].
 enum PermissionStatus {
